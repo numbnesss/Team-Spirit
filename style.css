@@ -1,3 +1,19 @@
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -62,16 +78,16 @@ nav {
     font-style: normal;
 }
 
-.navbar{
+.navbar {
     font-family: "Press Start 2P", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.home_tittle{
+.home_tittle {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(https://images.hub.ldpr.ru/display?path=media/images/moscow/2ddd2eea952f7e903fce24f58f15bdf1165f68867b0ec9c55a12ef0881ed72bd.webp&op=resize&h=600);
     height: 100vh;
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -79,11 +95,52 @@ nav {
     align-items: flex-end;
 }
 
-.home_tittle_txt{
+.home_tittle_txt {
     color: white;
     font-family: "Press Start 2P", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 15vh;
     padding-bottom: 15vh;
+}
+
+.about-us {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
